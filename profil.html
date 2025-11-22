@@ -1,0 +1,74 @@
+<html>
+<head><title>Profil</title></head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        background-image: url('HOME1.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;       
+        background-attachment: fixed;  
+        image-rendering: pixelated; 
+        image-rendering: crisp-edges;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+    .profile-card {
+      max-width: 400px;
+      margin: 50px auto;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      backdrop-filter: blur(10px) brightness(110%); 
+      -webkit-backdrop-filter: blur(10px) brightness(110%);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    .profile-card img {
+      width: 150px;
+      border-radius: 0;
+      margin-bottom: 20px;
+      border: 5px solid #007bff;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    .profile-card h2, 
+    .profile-card p, 
+    .profile-card a {
+      color: #fbf4f4; 
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .btn-custom {
+      background-color: #007bff;
+      color: rgb(243, 241, 241);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+</style>
+<body>
+    <div class="profile-card">
+        <img src="trias1.jpg" alt="Foto Profil">
+        <h2>Trias Wahyu Sriyono</h2>
+        <p class="text-muted">Mahasiswa | 05TPLM007</p>
+        <p>Saya Mahasiwa Dari Universitas Pamulang .</p>
+        <a href="kontak.html" class="btn btn-primary btn-sm">Hubungi Saya</a>
+        <br> <a href="P5.html" class="btn-custom">Kembali</a>
+    </div>
+</body>
+</html>

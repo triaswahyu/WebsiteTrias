@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tentang Web Ini</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('Viktor.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #040404;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .about-card {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #111010;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #020202;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin: 20px auto;
+      max-width: 400px;
+    }
+
+    ul li::before {
+      content: "#";
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      color: rgb(241, 238, 238);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-card">
+    <h2>Tentang Web Ini</h2>
+    <p>Website ini dibuat sebagai media pembelajaran dalam memahami dasar-dasar HTML, CSS, dan penggunaan hyperlink, serta untuk latihan proses hosting web sederhana.</p>
+
+    <h4>Tujuan Pembuatan</h4>
+    <ul>
+      <li>Belajar membuat halaman web sederhana menggunakan HTML.</li>
+      <li>Mengenal penggunaan hyperlink.</li>
+      <li>Mempelajari dasar styling dengan CSS dan Bootstrap.</li>
+      <li>Melatih kemampuan mengupload website ke hosting.</li>
+    </ul>
+
+    <h4>Teknologi yang Digunakan</h4>
+    <p>HTML, CSS,JavaScript dan Bootstrap 5</p>
+
+    <h4>Tentang Pembuat</h4>
+    <p>Saya <strong>Trias Wahyu</strong>, mahasiswa dari <strong>Universitas Pamulang</strong> kelas <strong>05TPLM007</strong>.  
+    Website ini merupakan bagian dari tugas mata kuliah <em>Pemrograman Web</em>.</p>
+
+    <a href="P5.html" class="btn-custom mt-3">Kembali</a>
+  </div>
+</body>
+</html>

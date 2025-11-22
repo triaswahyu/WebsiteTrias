@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('HOME1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      margin-top: 60px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    p {
+      text-align: center;
+      max-width: 600px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 80%;
+      max-width: 1000px;
+      margin: 40px 0;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+      padding: 8px 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 50px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Galeri </h2>
+  <p>Berikut beberapa gambar favorit dan menjadi bagian dari hobi serta inspirasi saya.</p>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="pantai1.jpg" alt="Pantai">
+      <div class="caption">Pantai</div>
+    </div>
+    <div class="gallery-item">
+      <img src="football2.jpg" alt="Olahraga">
+      <div class="caption">Olahraga</div>
+    </div>
+    <div class="gallery-item">
+      <img src="gambar3.jpg" alt="Tempat Wisata Impian">
+      <div class="caption">Tempat Wisata Impian</div>
+    </div>
+    <div class="gallery-item">
+      <img src="doggie4.jpg" alt="Hewan Peliharaan">
+      <div class="caption">Hewan Peliharaan</div>
+    </div>
+  </div>
+
+  <a href="P5.html" class="btn-custom">Kembali</a>
+</body>
+</html>
