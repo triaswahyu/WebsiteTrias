@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Variables for Theming */
+:root {
+  /* Light Theme */
+  --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-secondary: #f0f2f5;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --display-bg: #f8f9fa;
+  --text-primary: #1a1a2e;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --primary: #6366f1;
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --danger: #ef4444;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --btn-number: #ffffff;
+  --btn-operator: #e0e7ff;
+  --btn-function: #f3f4f6;
+  --btn-constant: #fef3c7;
+}
+
+[data-theme="dark"] {
+  --bg-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  --bg-secondary: #1e1e2e;
+  --card-bg: rgba(30, 30, 46, 0.95);
+  --display-bg: #11111b;
+  --text-primary: #cdd6f4;
+  --text-secondary: #a6adc8;
+  --border: #313244;
+  --primary: #8b5cf6;
+  --primary-gradient: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  --danger: #f38ba8;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --btn-number: #313244;
+  --btn-operator: #45475a;
+  --btn-function: #1e1e2e;
+  --btn-constant: #45475a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-primary);
+  min-height: 100vh;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+/* Number input - remove arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Selection */
+::selection {
+  background: var(--primary);
+  color: white;
+}
